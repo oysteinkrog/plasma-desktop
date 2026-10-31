@@ -239,7 +239,9 @@ Item {
             clock: clock
             alwaysShowClock: config.alwaysShowClock && !config.hideClockWhenIdle
 
-            Component.onCompleted: source = wallpaper
+            // Without a source the fader draws nothing and the wallpaper stays sharp.
+            // The fader still shows and hides the clock and the unlock prompt.
+            Component.onCompleted: source = config.blurWallpaper ? wallpaper : null
         }
 
         DropShadow {

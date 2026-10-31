@@ -15,6 +15,10 @@
       <label>Hide clock when prompt is hidden.</label>
       <default>false</default>
     </entry>
+    <entry name="blurWallpaper" type="Bool">
+      <label>Blur and dim the wallpaper while the unlock prompt is shown.</label>
+      <default>true</default>
+    </entry>
     <entry name="showMediaControls" type="Bool">
       <label>If true, shows any currently playing media along with controls to pause it.</label>
       <default>true</default>
